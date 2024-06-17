@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adivina el Contenedor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="mainHeader">
+    <img src="/logo.png" alt="logo" class="logo">
+    <img
+      id="menuBtn"
+      src="./src/icons/menuIcon.svg"
+      alt="menuBtn"
+    />
+    <ul class="mainMenu">
+      <li><a href="./index.html" id="selected">Inicio</a></li>
+      <li><a href="./index.html">Integrantes</a></li>
+      <li><a href="./index.html">Avances</a></li>
+      <li><a href="./index.html">Juegos</a></li>
+    </ul>
+  </header>
+  <main>
+    <div style="background-color: green;">
+      <div>
+        <h1>Adiviná el Contenedor Correspondiente</h1>
+        <p>Selecciona el contenedor correcto para cada residuo</p>
+      </div>
+    </div>
+    <div id="game">
+      <p id="question">¿Dónde debo tirar esta basura: <span id="residue">Papel</span>?</p>
+      <div id="buttons">
+        <button class="option" data-type="paper">Papel</button>
+        <button class="option" data-type="plastic">Plástico</button>
+        <button class="option" data-type="glass">Vidrio</button>
+        <button class="option" data-type="organic">Orgánico</button>
+      </div>
+    </div>
+    <div id="message"></div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
