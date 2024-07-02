@@ -28,6 +28,7 @@ header {
   color: white;
   padding: 1rem;
 }
+
 .mainHeader {
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
   height: 5rem;
@@ -70,17 +71,39 @@ header {
   font-size: 1.4rem;
 }
 
-main {
-  margin: 2rem;
+
+.contenedor {
+  margin: 10rem;
 }
 
-#game {
+.contAdivina{
+  background-color: #02391E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contAdivina h1{
+  color: rgb(160, 78, 160);
+}
+
+.contAdivina p{
+  color: rgb(160, 78, 160);
+}
+
+
+.game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 2rem 0;
 }
 
 #buttons {
   display: flex;
   justify-content: center;
+  height: 10rem;
   gap: 1rem;
 }
 
@@ -88,10 +111,15 @@ button {
   padding: 1rem 2rem;
   font-size: 1.2rem;
   cursor: pointer;
-  background-color: #007bff;
   color: white;
   border: none;
   border-radius: 5px;
+  background-image: url('basureroo.png');
+  background-size: 100%;  /* Ajusta el tamaño de la imagen */
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 20rem;
+  width: 10rem;
 }
 
 button:hover {
@@ -102,5 +130,43 @@ button:hover {
   margin-top: 2rem;
   font-size: 1.2rem;
 }
+button[data-type="paper"]:hover {
+  background-color: #FFD700; /* Color dorado para papel */
+}
 
-  
+button[data-type="plastic"]:hover {
+  background-color: #FF4500; /* Color naranja para plástico */
+}
+
+button[data-type="glass"]:hover {
+  background-color: #1E90FF; /* Color azul para vidrio */
+}
+
+button[data-type="organic"]:hover {
+  background-color: #32CD32; /* Color verde para orgánico */
+}
+
+.mainFooter{
+  min-height: 5rem;
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+  border-top: 1px solid #2323233b;
+
+}
+
+.footerTxt{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  color: #02391e;
+}
+
+.footerTxt p{
+  font-size: 1.4rem;
+  padding: .5rem 1rem;
+  margin: 1rem;
+  text-align: center;
+}
